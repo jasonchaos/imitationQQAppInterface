@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gst-du-9E9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--全部公告-->
+        <scene sceneID="Sm5-LX-6ls">
+            <objects>
+                <viewController storyboardIdentifier="allNotice" id="JOG-nE-K4M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WXM-gN-fuv"/>
+                        <viewControllerLayoutGuide type="bottom" id="4EQ-zt-JQk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqT-Fp-73r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部公告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1Ve-b2-kCb">
+                                <rect key="frame" x="226" y="278" width="148" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="1Ve-b2-kCb" secondAttribute="centerY" id="XQO-ix-FJ1"/>
+                            <constraint firstAttribute="centerX" secondItem="1Ve-b2-kCb" secondAttribute="centerX" id="Yyl-RZ-kKl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="全部公告" id="nia-2P-Fny"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGX-Sq-Nsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="97"/>
+        </scene>
+        <!--我的收藏-->
+        <scene sceneID="Rsl-3b-R18">
+            <objects>
+                <viewController storyboardIdentifier="favNotice" id="xu0-cP-Ca0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uqJ-Se-3R3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFY-Ey-9nJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FSN-tP-IAB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wn3-LD-eFe">
+                                <rect key="frame" x="226" y="278" width="148" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Wn3-LD-eFe" secondAttribute="centerY" id="LlL-x4-zjI"/>
+                            <constraint firstAttribute="centerX" secondItem="Wn3-LD-eFe" secondAttribute="centerX" id="SkX-cL-aCo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的收藏" id="1MD-nW-dej"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBM-7N-K5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="804"/>
+        </scene>
+        <!--未读公告-->
+        <scene sceneID="j51-xO-zCC">
+            <objects>
+                <viewController storyboardIdentifier="unReadNotice" id="hTW-TG-7To" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QOA-zH-ybc"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEQ-xo-o66"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xEo-nv-ody">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未读公告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="gVF-N9-psg">
+                                <rect key="frame" x="226" y="278" width="148" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="gVF-N9-psg" secondAttribute="centerX" id="k1i-J6-fE1"/>
+                            <constraint firstAttribute="centerY" secondItem="gVF-N9-psg" secondAttribute="centerY" id="kEQ-6w-6Q7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="未读公告" id="reM-hI-NvI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y08-4p-Pgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="-618"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="zYM-LD-Dnn">
+            <objects>
+                <tabBarController id="gst-du-9E9" customClass="myTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WDd-2t-5Ro">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hTW-TG-7To" kind="relationship" relationship="viewControllers" id="VS3-el-odf"/>
+                        <segue destination="JOG-nE-K4M" kind="relationship" relationship="viewControllers" id="vrF-bL-hJu"/>
+                        <segue destination="xu0-cP-Ca0" kind="relationship" relationship="viewControllers" id="Mrv-Ot-5cP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXO-jH-iiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="289"/>
+        </scene>
+    </scenes>
+</document>

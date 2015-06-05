@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainMenu">
+            <connections>
+                <outlet property="avatar" destination="BQZ-oq-k0o" id="XYL-kJ-ot0"/>
+                <outlet property="menuTableView" destination="L1Q-zN-fZ0" id="xDH-w0-mCr"/>
+                <outlet property="userInfoView" destination="01O-ak-PED" id="Ikl-1f-KSA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01O-ak-PED">
+                    <rect key="frame" x="0.0" y="40" width="600" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="BQZ-oq-k0o">
+                            <rect key="frame" x="20" y="10" width="60" height="60"/>
+                            <color key="backgroundColor" red="1" green="0.023573720190000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Qth-Kg-Nii"/>
+                                <constraint firstAttribute="width" constant="60" id="e9w-Z5-qbe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="佚名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRE-ct-UGU">
+                            <rect key="frame" x="90" y="20" width="450" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="iYR-ud-Hcg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息与网络中心" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-PL-N05">
+                            <rect key="frame" x="90" y="42" width="450" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="orH-DU-6JF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BQZ-oq-k0o" firstAttribute="top" secondItem="01O-ak-PED" secondAttribute="top" constant="10" id="NId-VL-Ul5"/>
+                        <constraint firstItem="MRE-ct-UGU" firstAttribute="leading" secondItem="BQZ-oq-k0o" secondAttribute="trailing" constant="10" id="Q4s-gz-I7S"/>
+                        <constraint firstItem="Vbn-PL-N05" firstAttribute="leading" secondItem="BQZ-oq-k0o" secondAttribute="trailing" constant="10" id="QG0-tA-dug"/>
+                        <constraint firstAttribute="trailing" secondItem="MRE-ct-UGU" secondAttribute="trailing" constant="60" id="Yeq-0a-qvY"/>
+                        <constraint firstAttribute="trailing" secondItem="Vbn-PL-N05" secondAttribute="trailing" constant="60" id="ZTb-eP-wXF"/>
+                        <constraint firstAttribute="height" constant="80" id="fjW-T4-dwL"/>
+                        <constraint firstItem="Vbn-PL-N05" firstAttribute="top" secondItem="MRE-ct-UGU" secondAttribute="bottom" constant="2" id="gms-KN-rkM"/>
+                        <constraint firstItem="BQZ-oq-k0o" firstAttribute="leading" secondItem="01O-ak-PED" secondAttribute="leading" constant="20" id="o1k-RF-LSz"/>
+                        <constraint firstItem="MRE-ct-UGU" firstAttribute="top" secondItem="01O-ak-PED" secondAttribute="top" constant="20" id="zV0-km-2z6"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="L1Q-zN-fZ0">
+                    <rect key="frame" x="0.0" y="120" width="600" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4BC-2m-Qoi"/>
+                        <outlet property="delegate" destination="-1" id="VPv-nr-KAa"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="L1Q-zN-fZ0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IfA-XY-snZ"/>
+                <constraint firstItem="01O-ak-PED" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="UJ4-3D-2n2"/>
+                <constraint firstItem="01O-ak-PED" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YTd-Mv-j6W"/>
+                <constraint firstAttribute="trailing" secondItem="L1Q-zN-fZ0" secondAttribute="trailing" id="dbk-2t-JEG"/>
+                <constraint firstItem="L1Q-zN-fZ0" firstAttribute="top" secondItem="01O-ak-PED" secondAttribute="bottom" id="eUc-fa-40g"/>
+                <constraint firstAttribute="trailing" secondItem="01O-ak-PED" secondAttribute="trailing" id="ez0-r0-JAX"/>
+                <constraint firstAttribute="bottom" secondItem="L1Q-zN-fZ0" secondAttribute="bottom" id="k9P-a8-VHR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="cat" width="340" height="480"/>
+    </resources>
+</document>
